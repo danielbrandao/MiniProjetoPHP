@@ -1,4 +1,5 @@
 <?php
+// Incluindo arquivo de configuração com BD
 include "admin/config.inc.php";
 
 ?>
@@ -36,7 +37,10 @@ include "admin/config.inc.php";
 <body>
 
     <!-- Navigation -->
-    <?php include "header.phtml"; ?>
+    <?php 
+    // Inclusão do Topo do site 
+    include "header.phtml"; 
+    ?>
 
     <!-- Page Content -->
     <div class="container">
@@ -76,7 +80,7 @@ include "admin/config.inc.php";
 
         <hr>
 
-        <!-- Footer -->
+        <!-- Inclusão do Footer (rodapé) -->
         <?php include "footer.php"; ?>
 
     </div>
