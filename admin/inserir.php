@@ -10,7 +10,7 @@
     </tr>
     <tr>
         <td>Texto: </td>
-        <td><textarea form="textarea" name="texto"></textarea></td>
+        <td><textarea name="texto" id="texto"></textarea></td>
     </tr>
     <tr>
         <td></td>

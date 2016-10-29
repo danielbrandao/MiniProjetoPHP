@@ -21,7 +21,7 @@ while($dados=mysqli_fetch_array($busca)){
     </tr>
     <tr>
         <td>Texto: </td>
-        <td><textarea form="textarea" name="texto" value="<?=$dados['texto'];?>"><?=$dados['texto'];?></textarea></td>
+        <td><textarea name="texto" value="<?=$dados['texto'];?>"><?=$dados['texto'];?></textarea></td>
     </tr>
     <tr>
         <td></td>

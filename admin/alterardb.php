@@ -8,7 +8,7 @@ $texto =        $_POST['texto'];
 
 $sql2 = mysqli_query($conexao, "SELECT * FROM admin WHERE id='$id'");
 
-$sql = "UPDATE admin SET titulo='$titulo', subtitulo='$subtitulo', texto='$texto' WHERE id='$id'";
+$sql = "UPDATE admin SET titulo='$titulo', subtitulo='$subtitulo', texto='$texto' WHERE id=$id";
 $altera = mysqli_query($conexao, $sql);
 
 if(!$altera){
@@ -16,8 +16,6 @@ if(!$altera){
     <a href='?pg=admin/listar'>Voltar</a>";
 }else{
    echo "<h3>Cadastrada com sucesso!</h3>
-<meta http-equiv='refresh' content='5;URL=?pg=admin/listar'>
-
 <a href='?pg=admin/listar'>Voltar</a>";
 }
 ?>
